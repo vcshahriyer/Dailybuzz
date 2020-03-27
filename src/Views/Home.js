@@ -1,7 +1,12 @@
 import React from 'react';
+
+// mui
 import { makeStyles } from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { Grid, Container, Paper } from '@material-ui/core';
+
+// custom
+import CreatePost from '../Components/CreatePost/CreatePost';
 
 
 const useStyles = makeStyles(theme => ({
@@ -25,14 +30,17 @@ const Home = () => {
                     </Grid>
                     <Grid
                         item
-                        lg={9}
+                        lg={6}
                         sm={6}
                         xl={3}
                         xs={12}
                     >
                         <Paper>
-                            <h1>contetn</h1>
+                            <CreatePost />
                         </Paper>
+                    </Grid>
+                    <Grid>
+                        <Paper></Paper>
                     </Grid>
                 </Grid>
             </Container>
