@@ -15,7 +15,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import ShareIcon from "@material-ui/icons/Share";
 import MessageIcon from "@material-ui/icons/Message";
-import { red } from "@material-ui/core/colors";
+import { lightBlue } from "@material-ui/core/colors";
 import Av1 from "../../assets/image/avatar1.jpg";
 
 const useStyles = makeStyles(theme => ({
@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     paddingTop: "56.25%" // 16:9
   },
   avatar: {
-    backgroundColor: red[500]
+    backgroundColor: lightBlue[600]
   },
   iconbutton: {
     marginLeft: "30px"
