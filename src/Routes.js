@@ -1,20 +1,16 @@
-import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
 
-import { RouteWithLayout } from './Components';
+// import { RouteWithLayout } from './Components';
 // import { Main as MainLayout, Minimal as MinimalLayout } from './layouts';
 
-import {
-  Home as HomeView,
-  
-} from './Views';
+import { Home as HomeView } from "./Views";
 
 const Routes = () => {
   return (
     <Switch>
-     
       <Route path="/">
-            <HomeView />
+        <HomeView />
       </Route>
       {/* <RouteWithLayout
         component={HomeView}
@@ -28,7 +24,7 @@ const Routes = () => {
         layout={MainLayout}
         path="/users"
       /> */}
-      
+
       {/* <RouteWithLayout
         component={NotFoundView}
         exact
