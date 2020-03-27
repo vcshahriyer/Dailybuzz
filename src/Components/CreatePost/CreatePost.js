@@ -1,13 +1,13 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
-import { TextField, InputAdornment, Typography } from '@material-ui/core';
-import AccountCircle from '@material-ui/icons/AccountCircle';
+import { Typography } from '@material-ui/core';
 import { Card, CardActions, CardMedia, IconButton, Button, TextareaAutosize } from '@material-ui/core';
 import PersonIcon from '@material-ui/icons/Person';
 import RoomIcon from '@material-ui/icons/Room';
+import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
 import Avatar from '@material-ui/core/Avatar';
 import Av1 from '../../assets/image/avatar1.jpg'
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -15,15 +15,14 @@ const useStyles = makeStyles(theme => ({
     },
     TextareaAutosize: {
         width: "100%",
-        paddingLeft: "60px",
-        paddingTop: "10px",
+        padding: "1rem 1rem 1rem 4rem",
         outline: "none",
         border: "none",
         borderBottom: "1px solid #ccc"
     },
     Avater: {
         position: "absolute",
-        margin: "5px"
+        margin: ".5rem"
     }
     
 }));
@@ -54,6 +53,11 @@ function CreatePost() {
                     <IconButton>
                         <RoomIcon />
                         <Typography>Check In</Typography>
+                    </IconButton>
+
+                    <IconButton>
+                        <EmojiEmotionsIcon />
+                        <Typography>Mood</Typography>
                     </IconButton>
                     </div>
                     <Button variant="contained" size="medium" color="primary" className={classes.shareButton}>

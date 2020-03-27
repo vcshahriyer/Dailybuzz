@@ -1,27 +1,29 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
-import { RouteWithLayout } from './Components';
-// import { Main as MainLayout, Minimal as MinimalLayout } from './layouts';
+import RouteWithLayout from './Components/RouteWithLayout/RouteWithLayout';
+import {Main} from './Layout';
 
 import {
   Home as HomeView,
   
 } from './Views';
 
+
+
 const Routes = () => {
   return (
     <Switch>
      
-      <Route path="/">
+      {/* <Route path="/">
             <HomeView />
-      </Route>
-      {/* <RouteWithLayout
+      </Route> */}
+      <RouteWithLayout
         component={HomeView}
         exact
-        layout=""
+        layout={Main}
         path="/"
-      /> */}
+      />
       {/* <RouteWithLayout
         component={UserListView}
         exact
