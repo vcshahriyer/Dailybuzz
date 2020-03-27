@@ -1,13 +1,10 @@
-import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
 
 import RouteWithLayout from './Components/RouteWithLayout/RouteWithLayout';
 import {Main} from './Layout';
 
-import {
-  Home as HomeView,
-  
-} from './Views';
+import { Home as HomeView } from "./Views";
 
 
 
@@ -30,7 +27,7 @@ const Routes = () => {
         layout={MainLayout}
         path="/users"
       /> */}
-      
+
       {/* <RouteWithLayout
         component={NotFoundView}
         exact
