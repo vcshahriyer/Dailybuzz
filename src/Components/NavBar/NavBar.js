@@ -14,6 +14,8 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import { useTheme } from '@material-ui/core/styles';
+
 
 const useStyles = makeStyles(theme => ({
     grow: {
@@ -24,6 +26,10 @@ const useStyles = makeStyles(theme => ({
     },
     title: {
         display: 'none',
+        fontSize: "1.5rem",
+        zIndex: "999",
+        fontFamily: theme.typography.logo.fontFamily,
+        padding: "1rem",
         [theme.breakpoints.up('sm')]: {
             display: 'block',
         },
@@ -81,6 +87,8 @@ const useStyles = makeStyles(theme => ({
 
 export default function NavBar() {
     const classes = useStyles();
+    const theme = useTheme();
+    console.log(theme)
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -163,7 +171,7 @@ export default function NavBar() {
 
     return (
         <div className={classes.grow}>
-            <AppBar position="static">
+            <AppBar position="static" color="">
                 <Toolbar>
                     <IconButton
                         edge="start"
@@ -173,9 +181,9 @@ export default function NavBar() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography className={classes.title} variant="h6" noWrap>
-                        Material-UI
-            </Typography>
+                    <Typography className={classes.title} variant="logo" noWrap>
+                        DailyBuzz
+                    </Typography>
                     <div className={classes.search}>
                         <div className={classes.searchIcon}>
                             <SearchIcon />

@@ -85,5 +85,8 @@ export default {
     letterSpacing: '0.33px',
     lineHeight: '13px',
     textTransform: 'uppercase'
+  },
+  logo: {
+    fontFamily: "'Courgette', cursive",
   }
 };

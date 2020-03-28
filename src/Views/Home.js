@@ -12,6 +12,9 @@ import PostCard from "../Components/PostCard/postCard";
 const useStyles = makeStyles(theme => ({
   root: {
     padding: theme.spacing(4)
+  },
+  GutterBottom: {
+    marginBottom: "1.5rem"
   }
 }));
 
@@ -29,7 +32,7 @@ const Home = () => {
             </Paper>
           </Grid>
           <Grid item lg={6} sm={6} xl={3} xs={12}>
-            <Paper>
+            <Paper className={classes.GutterBottom}>
               <CreatePost />
             </Paper>
             <PostCard></PostCard>
