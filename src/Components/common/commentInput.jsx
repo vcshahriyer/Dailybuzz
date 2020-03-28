@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, IconButton, InputBase, Avatar } from "@material-ui/core";
+import { IconButton, InputBase, Avatar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import AddAPhotoIcon from "@material-ui/icons/AddAPhoto";
 import EmojiEmotionsIcon from "@material-ui/icons/EmojiEmotions";
@@ -26,7 +26,7 @@ const CommentInput = () => {
   const classes = useStyles();
   const theme = useTheme();
   return (
-    <Paper component="form" className={classes.root}>
+    <>
       <Avatar className={classes.Avater} alt="Remy Shar" src={Av1} />
       <InputBase className={classes.input} placeholder="Place a comment." />
       <input
@@ -52,7 +52,7 @@ const CommentInput = () => {
       >
         <EmojiEmotionsIcon />
       </IconButton>
-    </Paper>
+    </>
   );
 };
 

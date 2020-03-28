@@ -96,8 +96,10 @@ const PostCard = props => {
             <ShareIcon />
           </IconButton>
         </CardActions>
+        <CardActions>
+          <CommentInput></CommentInput>
+        </CardActions>
       </Card>
-      <CommentInput></CommentInput>
     </Fragment>
   );
 };
