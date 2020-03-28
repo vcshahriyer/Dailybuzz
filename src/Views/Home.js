@@ -28,7 +28,7 @@ const Home = () => {
         <Grid container spacing={4}>
           <Grid item lg={3} sm={6} xl={3} xs={12}>
             <Paper>
-              <h1>HI</h1>
+              <h1>Left pannel</h1>
             </Paper>
           </Grid>
           <Grid item lg={6} sm={6} xl={3} xs={12}>
