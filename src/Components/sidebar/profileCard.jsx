@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Card,
-  CardHeader,
-  Avatar,
-  IconButton,
-  CardActions
-} from "@material-ui/core";
+import { Card, Avatar, IconButton, CardActions } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import EditIcon from "@material-ui/icons/Edit";
 import Av1 from "../../assets/image/avatar1.jpg";
@@ -20,32 +14,28 @@ const useStyles = makeStyles(theme => ({
   },
   avatar: {
     height: "80px",
-    width: "80px"
+    width: "80px",
+    margin: "7px auto"
   },
   iconbutton: {
     marginLeft: "30px"
+  },
+  tools: {
+    float: "right"
   }
 }));
 
 const ProfileCard = props => {
   const classes = useStyles();
-
   return (
     <Card className={classes.root}>
-      <CardHeader
-        avatar={
-          <Avatar
-            aria-label="recipe"
-            className={classes.avatar}
-            src={Av1}
-          ></Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <EditIcon />
-          </IconButton>
-        }
-      />
+      <div className={classes.tools}>
+        <IconButton aria-label="settings">
+          <EditIcon />
+        </IconButton>
+      </div>
+
+      <Avatar aria-label="recipe" className={classes.avatar} src={Av1}></Avatar>
       <CardActions disableSpacing>
         <IconButton
           className={classes.iconbutton}
