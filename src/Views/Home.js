@@ -8,6 +8,7 @@ import { Grid, Container, Paper } from "@material-ui/core";
 // custom
 import CreatePost from "../Components/CreatePost/CreatePost";
 import PostCard from "../Components/PostCard/postCard";
+import ProfileCard from "./../Components/sidebar/profileCard";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -27,9 +28,7 @@ const Home = () => {
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item lg={3} sm={6} xl={3} xs={12}>
-            <Paper>
-              <h1>Left pannel</h1>
-            </Paper>
+            <ProfileCard></ProfileCard>
           </Grid>
           <Grid item lg={6} sm={6} xl={3} xs={12}>
             <Paper className={classes.GutterBottom}>
