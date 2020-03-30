@@ -22,7 +22,10 @@ const ActiveFriendList = () => {
   return (
     <ul className={classes.root}>
       <li className={classes.list}>
-        <Avatar aria-label="recipe" src={Av1}></Avatar>
+        <div className="activeIndicator">
+          <Avatar aria-label="recipe" src={Av1}></Avatar>
+          <span className="indicator"></span>
+        </div>
         <div className={classes.info}>
           <Typography variant="h6" component="p">
             Jeff Weiner
@@ -55,7 +58,10 @@ const ActiveFriendList = () => {
         </div>
       </li>
       <li className={classes.list}>
-        <Avatar aria-label="recipe" src={Av1}></Avatar>
+        <div className="activeIndicator">
+          <Avatar aria-label="recipe" src={Av1}></Avatar>
+          <span className="indicator"></span>
+        </div>
         <div className={classes.info}>
           <Typography variant="h6" component="p">
             Jeff Weiner
