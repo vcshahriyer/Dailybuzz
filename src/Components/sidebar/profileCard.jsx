@@ -59,7 +59,11 @@ const ProfileCard = props => {
       <Typography variant="subtitle2" align="center">
         Software Engineer
       </Typography>
-      <Typography variant="h5" className={theme.typography.h5}>
+      <Typography
+        style={{ marginLeft: "5px" }}
+        variant="h5"
+        className={theme.typography.h5}
+      >
         Recent Friend
       </Typography>
       <ActiveFriendList></ActiveFriendList>

@@ -87,7 +87,7 @@ export default {
     textTransform: "uppercase"
   },
   h5: {
-    padding: "10px",
+    padding: "5px",
     color: palette.heading.primary,
     fontWeight: "bold",
     fontSize: "1rem"
